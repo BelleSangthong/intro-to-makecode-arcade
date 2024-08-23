@@ -2,9 +2,8 @@ controller.B.onEvent(ControllerButtonEvent.Pressed, function () {
     mySprite.y += -10
 })
 controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
-    mySprite.startEffect(effects.disintegrate)
+    mySprite.startEffect(effects.trail)
 })
-let Awnser = 0
 let mySprite: Sprite = null
 scene.setBackgroundImage(img`
     7777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777
@@ -130,4 +129,4 @@ scene.setBackgroundImage(img`
     `)
 game.splash("Scooby gang is on the move")
 mySprite = sprites.create(assets.image`Scooby SNAXX`, SpriteKind.Food)
-mySprite.say(game.askForString(Awnser, 12))
+mySprite.say("I Want to break free")
